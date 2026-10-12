@@ -56,7 +56,21 @@ En el iPhone: abre una foto o PDF → **Compartir** → **Imprimir** → selecci
 
 ## 🍺 Homebrew
 
-La fórmula de `Formula/mac-printer-bridge.rb` está preparada para un tap propio. Para publicarla como fórmula estable, crea primero una release/tag y actualiza el `url` y el `sha256` de esa release.
+Tap oficial del proyecto:
+
+```bash
+brew tap r03r/mac-printer-bridge
+brew install mac-printer-bridge
+sudo mac-printer-bridge-setup
+```
+
+Atajo para instalar el script directamente desde GitHub:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/r03r/mac-printer-bridge/main/install.sh -o /tmp/mac-printer-bridge-install.sh && chmod +x /tmp/mac-printer-bridge-install.sh && sudo /tmp/mac-printer-bridge-install.sh
+```
+
+> 🔐 Revisa el script antes de ejecutarlo con `sudo`. El proyecto es una herramienta Bash para macOS, no un paquete npm.
 
 ## 🛡️ Seguridad y privacidad
 
